@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    /*
+        o box-sizing vai ser usado como um meio de contar o espaçamento interno, a unica coisa n afetada vai ser a margen
+        valor padrão dela é content-box
+    */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}
+
+header{
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+header img{
+    margin-top: 12px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto; /*centraliza o container 0 significa que a margem superior e inferir é 0 e a esquerda e direita é automatica */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#planos{
+    padding: 80px 0;
+}
+
+#planos::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+article{
+    border: 1px solid #95a4a5;
+    /*display: inline-block; jeito anterior que eu tinha feito para fazer eles ficar lado a lado */
+    float: left;
+    width: 370px;
+    padding: 10px;
+    margin: 15px;
+}
+
+article > h2{
+    background-color: #95a4a5;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5;/*A propriedade CSS line-height permite controlar o espaçamento entre as linhas de um texto*/
+    margin: -10px;/*to usando isso para colar o h2 no article, por causa do padding tem q colocar isso*/
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+article > div{
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+
+}
+
+article > ul{
+    list-style: none;/*tira o estilo da lista*/
+    padding: 0;
+    margin: 20px 0;
+}
+
+article > ul > li{
+    text-align: center;
+}
+
+article > footer{
+    text-align: center;
+}
+
+.botao{
+    display: inline-block;
+    background-color:#127d00;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none; 
+}
+/* dois ponto pseudo elemento um ponto pseudo class
+    propriedade overflow:hidden a parte que estourar o conteiner vai ser escondida;
+*/
+.botao:hover, .botao:focus{
+    background-color: #0e6400;
+}
