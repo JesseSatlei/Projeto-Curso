@@ -42,10 +42,17 @@ header img{
 article{
     border: 1px solid #95a4a5;
     /*display: inline-block; jeito anterior que eu tinha feito para fazer eles ficar lado a lado */
-    float: left;
-    width: 30%;
+
     padding: 10px;
-    margin: 1.6%;
+     
+}
+
+@media (min-width: 800px){
+    article{
+        width: 30%;
+        float: left;
+        margin: 1.6%;
+    }
 }
 
 article > h2{
