@@ -23,7 +23,7 @@ header img{
 }
 
 .container{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto; /*centraliza o container 0 significa que a margem superior e inferir é 0 e a esquerda e direita é automatica */
     padding-left: 15px;
     padding-right: 15px;
@@ -43,9 +43,9 @@ article{
     border: 1px solid #95a4a5;
     /*display: inline-block; jeito anterior que eu tinha feito para fazer eles ficar lado a lado */
     float: left;
-    width: 370px;
+    width: 30%;
     padding: 10px;
-    margin: 15px;
+    margin: 1.6%;
 }
 
 article > h2{
