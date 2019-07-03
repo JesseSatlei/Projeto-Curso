@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    /*
+        o box-sizing vai ser usado como um meio de contar o espaçamento interno, a unica coisa n afetada vai ser a margen
+        valor padrão dela é content-box
+    */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}

@@ -3,62 +3,64 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="css/bootstrap-grid/bootstrap.min-grid.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/componentes.css">
         <script src="js/funcao.js"></script>
     </head>
     <body>
-        <header>
+        <header class="layout-cabecalho">
             <div class="container">
                 <img src="imagens/log.png" width="100" height="47" alt="Cavalareiros dos Animes" style="background:black">
             </div>
         </header>
-        <div id="planos" class="container">
+        <div id="planos" class="layout-planos container">
             <div class="row">
                 <div class="col-md-4">
-                    <article>
-                        <h2>Autônomo</h2>
-                        <div>R$59/mês</div>
-                        <ul>
+                    <article class="plano">
+                        <h2 class="plano__cabecalho">Autônomo</h2>
+                        <div class="plano__preco">R$59/mês</div>
+                        <ul class="plano__caracteristicas">
                             <li>Até <strong>2 usuários</strong></li>
                             <li><strong>500mb</strong> de armazenamento</li>
                             <li>Lançamentos ilimitados</li>
                             <li>Acesso seguro</li>
                             <li>Sem fidelidade</li>
                         </ul>
-                        <footer><!--footer é um rodapé, não necessariamente o footer precisa ser o rodapé da pagina, ele pode ser de uma seção ou artigo(article)-->
-                            <a href="#" class="botao">Assinar</a>
+                        <footer class="plano__rodape"><!--footer é um rodapé, não necessariamente o footer precisa ser o rodapé da pagina, ele pode ser de uma seção ou artigo(article)-->
+                            <a href="#" class="botao botao--assinar">Assinar</a>
                         </footer>
                     </article>
                 </div>
                 <div class="col-md-4">
-                    <article>
-                        <h2>Micro</h2>
-                        <div>R$89/mês</div>
-                        <ul>
+                    <article class="plano">
+                        <h2 class="plano__cabecalho">Micro</h2>
+                        <div class="plano__preco">R$89/mês</div>
+                        <ul class="plano__caracteristicas">
                             <li>Até <strong>6 usuários</strong></li>
                             <li><strong>1GB</strong> de armazenamento</li>
                             <li>Lançamentos ilimitados</li>
                             <li>Acesso seguro</li>
                             <li>Sem fidelidade</li>
                         </ul>
-                        <footer>
-                            <a href="#" class="botao">Assinar</a>
+                        <footer class="plano__rodape">
+                            <a href="#" class="botao botao--assinar">Assinar</a>
                         </footer>
                     </article>
                 </div>
                 <div class="col-md-4">
-                    <article style="margin-right: 0">
-                        <h2>Pequena</h2>
-                        <div>R$99/mês</div>
-                        <ul>
+                    <article class="plano">
+                        <h2 class="plano__cabecalho">Pequena</h2>
+                        <div class="plano__preco">R$99/mês</div>
+                        <ul class="plano__caracteristicas">
                             <li>Até <strong>10 usuários</strong></li>
                             <li><strong>5GB</strong> de armazenamento</li>
                             <li>Lançamentos ilimitados</li>
                             <li>Acesso seguro</li>
                             <li>Sem fidelidade</li>
                         </ul>
-                        <footer>
-                            <a href="#" class="botao">Assinar</a>
+                        <footer class="plano__rodape">
+                            <a href="#" class="botao botao--assinar">Assinar</a>
                         </footer>
                     </article>
                 </div>
